@@ -984,7 +984,7 @@ const Navbar = ()=>{
 };
 _c = Navbar;
 const Product = (props)=>{
-    const { brand, image, price, discount } = props.itsMyChoice;
+    const { brand, image, price, discount } = props.product;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "product",
         children: [
@@ -1043,7 +1043,7 @@ const ProductCard = ()=>{
         className: "productcard",
         children: [
             ProductList.map((product)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Product, {
-                    itsMyChoice: product
+                    product: product
                 }, product.id, false, {
                     fileName: "app.js",
                     lineNumber: 283,

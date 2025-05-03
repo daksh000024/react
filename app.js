@@ -262,7 +262,7 @@ const Navbar = ()=>{
 };
 
 const Product = (props)=>{
-  const {brand,image,price,discount} = props.itsMyChoice;
+  const {brand,image,price,discount} = props.product;
 return(
     <div className = "product">
         <div className="image">
@@ -280,7 +280,7 @@ return(
     <div className="productcard">
   {
   ProductList.map((product) => (
-    <Product key={product.id} itsMyChoice={product} />
+    <Product key={product.id} product={product} />
   ))};
 
    </div>
